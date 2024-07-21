@@ -30,6 +30,9 @@
       href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap"
       rel="stylesheet"
     />
+    <!-- Animation -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Font -->
     <link rel="stylesheet" href="assets/css/satoshi.css" />
@@ -41,7 +44,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-  <body class="startup-one">
+  <body class="startup-one tcg-dark-mode">
     <!-- ==================== Start Loading ==================== -->
 
     <div class="loader-wrap">
@@ -64,8 +67,6 @@
 
     <!-- ==================== End Loading ==================== -->
 
-    <div class="cursor"></div>
-
     <!-- ==================== Start progress-scroll-button ==================== -->
 
     <div class="progress-wrap cursor-pointer">
@@ -84,7 +85,7 @@
     <div id="smooth-wrapper">
       <!-- ==================== Start Navbar ==================== -->
 
-      <nav class="navbar navbar-expand-lg nav-crev change">
+      <nav class="navbar navbar-expand-lg change blur">
         <div class="container">
           <!-- Logo -->
           <a class="logo icon-img-100" href="#">
@@ -126,16 +127,16 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#0" data-scroll-nav="3"
-                  ><span class="rolling-text">Portfolio</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#0" data-scroll-nav="4"
-                  ><span class="rolling-text">Team</span></a
+                  ><span class="rolling-text">Projects</span></a
                 >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#0" data-scroll-nav="5"
+                  ><span class="rolling-text">Why RevPer</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#0" data-scroll-nav="6"
                   ><span class="rolling-text">Contact</span></a
                 >
               </li>
@@ -214,20 +215,22 @@
                   <li data-scroll-nav="3">
                     <div class="o-hidden">
                       <div class="link cursor-pointer dmenu">
-                        <span class="fill-text" data-text="Portfolio"
-                          >Portfolio</span
+                        <span class="fill-text" data-text="Projects"
+                          >Projects</span
                         >
                       </div>
                     </div>
                   </li>
-                  <li data-scroll-nav="4">
+                  <li data-scroll-nav="5">
                     <div class="o-hidden">
                       <div class="link cursor-pointer dmenu">
-                        <span class="fill-text" data-text="Team">Team</span>
+                        <span class="fill-text" data-text="Why RevPer"
+                          >Why RevPer</span
+                        >
                       </div>
                     </div>
                   </li>
-                  <li data-scroll-nav="5">
+                  <li data-scroll-nav="6">
                     <div class="o-hidden">
                       <div class="link cursor-pointer dmenu">
                         <span class="fill-text" data-text="Contact"
@@ -292,172 +295,481 @@
         <main class="main-bg">
           <!-- ==================== Start Header ==================== -->
 
-          <header class="startup-header" data-scroll-index="0">
-            <div
-              class="valign bg-img"
-              data-background="assets/img/banner.jpg"
-              data-overlay-dark="5"
-            >
-              <div class="container pt-40">
-                <div class="caption">
-                  <div class="lg-text fw-600">
-                    <div class="text d-flex align-items-center">
-                      <span>Commercial</span>
+          <header class="slider slider-prlx">
+            <div class="swiper-container parallax-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="bg-img valign"
+                    data-background="assets/img/slider/1.jpg"
+                    data-overlay-dark="4"
+                  >
+                    <div class="container">
+                      <div class="caption text-center">
+                        <h2 class="mb-30" data-swiper-parallax="-2000">
+                          Welcome To RevPer Solution
+                        </h2>
+                        <h1>
+                          <span data-swiper-parallax="-1000"
+                            >Revenue Management</span
+                          >
+                        </h1>
+                      </div>
                     </div>
-                    <div class="text">&</div>
-                    <div class="text">Operational Stratergy</div>
                   </div>
-                  <p>
-                    Leveraging on pricing & inventory controls we help you
-                    optimize your business delivery & channel performance to
-                    align
-                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="bg-img valign"
+                    data-background="assets/img/slider/2.1.jpg"
+                    data-overlay-dark="4"
+                  >
+                    <div class="container">
+                      <div class="caption text-center">
+                        <h2 class="mb-30" data-swiper-parallax="-2000">
+                          We Offer
+                        </h2>
+                        <h1>
+                          <a href="#0" data-scroll-nav="1">
+                            <span data-swiper-parallax="-1000"
+                              >Dynamic Pricing Strategies</span
+                            ></a
+                          >
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="bg-img valign"
+                    data-background="assets/img/slider/3.jpg"
+                    data-overlay-dark="4"
+                  >
+                    <div class="container">
+                      <div class="caption text-center">
+                        <h2 class="mb-30" data-swiper-parallax="-2000">
+                          Why Choose Us?
+                        </h2>
+                        <h1>
+                          <a href="#0" data-scroll-nav="5">
+                            <span data-swiper-parallax="-1000"
+                              >Data-Driven Approach
+                            </span>
+                          </a>
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- slider setting -->
+            <div class="slider-contro main-bg">
+              <div class="swiper-button-prev swiper-nav-ctrl cursor-pointer">
+                <div>
+                  <span>Prev</span>
+                </div>
+              </div>
+              <div class="ml-30 mr-30">
+                <span>/</span>
+              </div>
+              <div class="swiper-button-next swiper-nav-ctrl cursor-pointer">
+                <div>
+                  <span>Next</span>
+                </div>
+              </div>
+
+              <div class="shap-left-bottom">
+                <svg
+                  viewBox="0 0 11 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-11 h-11"
+                >
+                  <path
+                    d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+              </div>
+              <div class="shap-right-top">
+                <svg
+                  viewBox="0 0 11 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-11 h-11"
+                >
+                  <path
+                    d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </header>
 
           <!-- ==================== End Header ==================== -->
 
           <!-- ==================== Start Services ==================== -->
 
-          <section class="services-crev section-padding" data-scroll-index="1">
+          <section
+            class="blog-crev section-padding"
+            id="services"
+            data-scroll-index="1"
+          >
             <div class="container">
-              <div class="sec-head mb-80">
-                <h6 class="sub-title main-color mb-25">Our Specialize</h6>
+              <div
+                class="sec-head mb-80"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <h6 class="sub-title main-color mb-25">Our Services</h6>
                 <div class="bord pt-25 bord-thin-top d-flex align-items-center">
-                  <h2 class="fw-600 text-u ls1">
-                    What We <span class="fw-200"> Offer</span>
+                  <h2 class="fw-600">
+                    What We <span class="fw-200">Offer</span>
                   </h2>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-6">
-                  <div class="item-box mb-30">
-                    <div class="d-flex align-items-end">
-                      <div>
-                        <span class="num fz-20">01.</span>
-                        <div class="icon mr-80">
-                          <img src="assets/img/serv-icons/3.png" alt="" />
+                  <div
+                    class="item sub-bg md-mb50 lg-serv"
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="img">
+                      <img src="assets/img/services/1.jpeg" alt="" />
+                      <div class="tag sub-bg">
+                        <span>RevPAR Optimization</span>
+                        <div class="shap-right-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="shap-left-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
                         </div>
                       </div>
-                      <div>
-                        <h5>CRM Structure</h5>
-                        <div class="text mt-30">
-                          <p class="mb-80">
-                            Daily, weekly, and monthly availability, and price
-                            management to enhance and maximize topline revenue.
-                          </p>
-                        </div>
-                      </div>
+                    </div>
+                    <div class="cont">
+                      <p>
+                        Our team of experts leverages advanced analytics and
+                        industry insights to optimize your RevPAR. By analyzing
+                        market trends, competitor data, and demand forecasts, we
+                        develop strategies that drive occupancy and increase
+                        average room rates.
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="item-box mb-30">
-                    <div class="d-flex align-items-end">
-                      <div>
-                        <span class="num fz-20">02.</span>
-                        <div class="icon mr-80">
-                          <img src="assets/img/serv-icons/4.png" alt="" />
+                  <div
+                    class="item sub-bg md-mb50 lg-serv"
+                    data-aos="fade-up-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="img">
+                      <img src="assets/img/services/2.jpeg" alt="" />
+                      <div class="tag sub-bg">
+                        <span>Channel Management / CRM Stucture</span>
+                        <div class="shap-right-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="shap-left-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
                         </div>
                       </div>
-                      <div>
-                        <h5>Market Based Strategy:</h5>
-                        <div class="text mt-30">
-                          <p class="mb-80">
-                            recognizes how decisions affect operations, and we
-                            use data to optimize your rates and tactics
-                          </p>
-                        </div>
-                      </div>
+                    </div>
+                    <div class="cont">
+                      <p>
+                        Daily, weekly, and monthly availability, and price
+                        Management to enhance and maximize topline revenue. We
+                        streamline your distribution channels and manage online
+                        travel agencies (OTAs), ensuring optimal visibility and
+                        rate parity across all platforms. This improves your
+                        market reach while maintaining brand integrity.
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="item-box md-mb30">
-                    <div class="d-flex align-items-end">
-                      <div>
-                        <span class="num fz-20">03.</span>
-                        <div class="icon mr-80">
-                          <img src="assets/img/serv-icons/5.png" alt="" />
+                  <div
+                    class="item sub-bg mt-30 lg-serv"
+                    data-aos="fade-up-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="img">
+                      <img src="assets/img/services/3.jpeg" alt="" />
+                      <div class="tag sub-bg">
+                        <span>Dynamic Pricing Strategies</span>
+                        <div class="shap-right-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
                         </div>
-                      </div>
-                      <div>
-                        <h5>Distribution Support</h5>
-                        <div class="text mt-30">
-                          <p class="mb-80">
-                            (Technology) PMS, Owner Portal. Revenue Reports.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="item-box mb-30">
-                    <div class="d-flex align-items-end">
-                      <div>
-                        <span class="num fz-20">04.</span>
-                        <div class="icon mr-80">
-                          <img src="assets/img/serv-icons/6.png" alt="" />
-                        </div>
-                      </div>
-                      <div>
-                        <h5>Bridging the Sales Gap:</h5>
-                        <div class="text mt-30">
-                          <p class="mb-80">
-                            Organizational strategy by ensuring that the sales
-                            force contributes market expertise and connect it to
-                            data insights, so enabling the holiday homes to
-                            obtain the benefits of collaborative success.
-                          </p>
+                        <div class="shap-left-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="item-box md-mb30">
-                    <div class="d-flex align-items-end">
-                      <div>
-                        <span class="num fz-20">05.</span>
-                        <div class="icon mr-80">
-                          <img src="assets/img/serv-icons/6.png" alt="" />
-                        </div>
-                      </div>
-                      <div>
-                        <h5>Date Analysis (pricing):</h5>
-                        <div class="text mt-30">
-                          <p class="mb-80">
-                            Generating insight from internal & External sources,
-                            we help you harness market opportunities at the
-                            opportune moment
-                          </p>
-                        </div>
-                      </div>
+                    <div class="cont">
+                      <p>
+                        We implement dynamic pricing strategies that adapt in
+                        real-time to market fluctuations and booking patterns.
+                        This approach ensures that your room rates remain
+                        competitive while maximizing revenue during peak demand
+                        periods.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="item-box">
-                    <div class="d-flex align-items-end">
-                      <div>
-                        <span class="num fz-20">06.</span>
-                        <div class="icon mr-80">
-                          <img src="assets/img/serv-icons/6.png" alt="" />
+                <div
+                  class="col-lg-6"
+                  data-aos="fade-up-left"
+                  data-aos-duration="1000"
+                >
+                  <div class="item sub-bg mt-30 lg-serv">
+                    <div class="img">
+                      <img src="assets/img/services/4.jpeg" alt="" />
+                      <div class="tag sub-bg">
+                        <span>Forecasting and Demand Management</span>
+                        <div class="shap-right-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="shap-left-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
                         </div>
                       </div>
-                      <div>
-                        <h5>Consistent Communication</h5>
-                        <div class="text mt-30">
-                          <p class="mb-80">
-                            We evaluate data points as a team and communicate
-                            frequently. The success of the plan is facilitated
-                            by the collaborative environment
-                          </p>
+                    </div>
+                    <div class="cont">
+                      <p>
+                        Through sophisticated forecasting models, we accurately
+                        predict future demand trends. This enables proactive
+                        decision-making, such as inventory allocation and
+                        promotional strategies, to capture revenue
+                        opportunities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div
+                    class="item sub-bg mt-30 md-serv"
+                    data-aos="flip-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="img">
+                      <img src="assets/img/services/5.jpeg" alt="" />
+                      <div class="tag sub-bg">
+                        <span>Competitor Analysis</span>
+                        <div class="shap-right-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="shap-left-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
                         </div>
                       </div>
+                    </div>
+                    <div class="cont">
+                      <p>
+                        Gain a competitive edge with our comprehensive
+                        competitor analysis. We benchmark your performance
+                        against industry leaders and identify opportunities to
+                        enhance your market position.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div
+                    class="item sub-bg mt-30 md-serv"
+                    data-aos="flip-up"
+                    data-aos-duration="1000"
+                  >
+                    <div class="img">
+                      <img src="assets/img/services/6.jpeg" alt="" />
+                      <div class="tag sub-bg">
+                        <span>Distribution Support</span>
+                        <div class="shap-right-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="shap-left-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cont">
+                      <p>
+                        PMS, Owner Portal, Revenue Reports. (Landlords can view/
+                        access anytime transparency) Our intuitive reporting
+                        tools provide actionable insights into your revenue
+                        performance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div
+                    class="item sub-bg mt-30 md-serv"
+                    data-aos="flip-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="img">
+                      <img src="assets/img/services/7.jpeg" alt="" />
+                      <div class="tag sub-bg">
+                        <span>Consistent Communication</span>
+                        <div class="shap-right-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="shap-left-bottom">
+                          <svg
+                            viewBox="0 0 11 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-11 h-11"
+                          >
+                            <path
+                              d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                              fill="#f5f7f9"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cont">
+                      <p>
+                        We evaluate data points as a team and communicate
+                        frequently. The success of the plan is facilitated by
+                        the collaborative environment.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -471,41 +783,46 @@
 
           <section class="about" data-scroll-index="2">
             <div class="container section-padding bord-thin-top">
-              <div class="row md-marg">
+              <div class="row md-marg align-items-end">
                 <div class="col-lg-6">
-                  <div class="cont md-mb50">
+                  <div
+                    class="cont md-mb50"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <h6 class="sub-title main-color mb-15">Who We Are</h6>
                     <h3>Partnering you in your success</h3>
-                    <div class="d-flex align-items-end mt-100">
-                      <div>
+                    <div
+                      class="d-flex align-items-end mt-100"
+                      data-aos-duration="1000"
+                    >
+                      <div class="d-flex align-items-end">
                         <span class="sub-title nowrap">About Us</span>
                       </div>
                       <div class="ml-80">
-                        <p>
-                          Intelligent Control Middle-East is a solutions
-                          provider for Automation, Control, Revenue Management,
-                          Communication and Security systems requirements. With
-                          more than 10 years of experience in delivering quality
-                          products and projects in Oman, we strive to provide
-                          exceptional services, to create added value on
-                          projects in the UAE & GCC. We provide innovative
-                          solutions for Building Infrastructure Management,
-                          Power, Utility, Communication, Instrumentation and
-                          Security system requirements.
+                        <p class="mb-15">
+                          Welcome to RevPar Solution Revenue Management
+                          Services, we specialize in empowering your hospitality
+                          business with cutting-edge Revenue Management
+                          solutions, specifically tailored to optimize your
+                          RevPAR and maximize profitability. Our comprehensive
+                          suite of services is designed to meet the unique
+                          challenges of the hospitality industry, ensuring that
+                          every room in your property achieves its maximum
+                          revenue potential.
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="img-vid">
+                  <div
+                    class="img-vid"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <img src="assets/img/about.jpg" alt="" />
                     <div class="curv-butn main-bg">
-                      <a href="https://youtu.be/AzwC6umvd1s" class="vid">
-                        <div class="icon">
-                          <i class="fas fa-play"></i>
-                        </div>
-                      </a>
                       <div class="shap-left-top">
                         <svg
                           viewBox="0 0 11 11"
@@ -515,7 +832,7 @@
                         >
                           <path
                             d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                            fill="#fff"
+                            fill="#f5f7f9"
                           ></path>
                         </svg>
                       </div>
@@ -528,7 +845,7 @@
                         >
                           <path
                             d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
-                            fill="#fff"
+                            fill="#f5f7f9"
                           ></path>
                         </svg>
                       </div>
@@ -623,15 +940,19 @@
             data-scroll-index="3"
           >
             <div class="container">
-              <div class="sec-head mb-80">
-                <h6 class="sub-title main-color mb-25">Our Portfolio</h6>
+              <div
+                class="sec-head mb-80"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <h6 class="sub-title main-color mb-25">Our Projects</h6>
                 <div class="bord pt-25 bord-thin-top d-flex align-items-center">
                   <h2 class="fw-600 text-u ls1">
-                    Featured <span class="fw-200">projects</span>
+                    Featured <span class="fw-200">Projects</span>
                   </h2>
                 </div>
               </div>
-              <div class="row">
+              <div class="row" data-aos="fade-up" data-aos-duration="1000">
                 <div
                   class="col-lg-5 d-flex align-items-center justify-content-center"
                 >
@@ -644,30 +965,25 @@
                     <div
                       id="tab-2"
                       class="bg-img tab-img"
-                      data-background="assets/img/project/1.jpg"
+                      data-background="assets/img/project/2.jpg"
                     ></div>
                     <div
                       id="tab-3"
                       class="bg-img tab-img"
-                      data-background="assets/img/project/1.jpg"
+                      data-background="assets/img/project/3.jpg"
                     ></div>
                     <div
                       id="tab-4"
                       class="bg-img tab-img"
-                      data-background="assets/img/project/1.jpg"
-                    ></div>
-                    <div
-                      id="tab-5"
-                      class="bg-img tab-img"
-                      data-background="assets/img/project/1.jpg"
+                      data-background="assets/img/project/4.jpg"
                     ></div>
                   </div>
                 </div>
                 <div class="col-lg-6 offset-lg-1 content">
                   <div class="cluom mb-30 current" data-tab="tab-1">
                     <div class="info">
-                      <h6 class="sub-title opacity-7">UI-UX Design</h6>
-                      <h4>Sub title</h4>
+                      <h6 class="sub-title opacity-7">UAE</h6>
+                      <h4>Pureliving Holiday Homes</h4>
                     </div>
                     <div class="img">
                       <img src="assets/img/project/1.jpg" alt="" />
@@ -675,38 +991,29 @@
                   </div>
                   <div class="cluom mb-30" data-tab="tab-2">
                     <div class="info">
-                      <h6 class="sub-title opacity-7">Project Name</h6>
-                      <h4>Sub title</h4>
+                      <h6 class="sub-title opacity-7">UAE</h6>
+                      <h4>Palmstay Holiday Homes</h4>
                     </div>
                     <div class="img">
-                      <img src="assets/img/project/1.jpg" alt="" />
+                      <img src="assets/img/project/2.jpg" alt="" />
                     </div>
                   </div>
                   <div class="cluom mb-30" data-tab="tab-3">
                     <div class="info">
-                      <h6 class="sub-title opacity-7">Project Name</h6>
-                      <h4>Sub title</h4>
+                      <h6 class="sub-title opacity-7">UAE</h6>
+                      <h4>Airbnb Individual Clinets</h4>
                     </div>
                     <div class="img">
-                      <img src="assets/img/project/1.jpg" alt="" />
+                      <img src="assets/img/project/3.jpg" alt="" />
                     </div>
                   </div>
                   <div class="cluom mb-30" data-tab="tab-4">
                     <div class="info">
-                      <h6 class="sub-title opacity-7">Project Name</h6>
-                      <h4>Sub title</h4>
+                      <h6 class="sub-title opacity-7">Chennai</h6>
+                      <h4>Metro Palace Hotel Chennai</h4>
                     </div>
                     <div class="img">
-                      <img src="assets/img/project/1.jpg" alt="" />
-                    </div>
-                  </div>
-                  <div class="cluom" data-tab="tab-5">
-                    <div class="info">
-                      <h6 class="sub-title opacity-7">Project Name</h6>
-                      <h4>Sub title</h4>
-                    </div>
-                    <div class="img">
-                      <img src="assets/img/project/1.jpg" alt="" />
+                      <img src="assets/img/project/4.jpg" alt="" />
                     </div>
                   </div>
                 </div>
@@ -719,7 +1026,7 @@
           <!-- ==================== Start image scale ==================== -->
 
           <div class="in-box mb-15">
-            <div class="img-scale">
+            <div class="img-scale" data-aos="fade-up" data-aos-duration="1500">
               <div class="image" data-overlay-dark="4">
                 <div class="img">
                   <img
@@ -729,20 +1036,12 @@
                     data-lag="0"
                     alt=""
                   />
-                  <a
-                    href="#"
-                    class="vid vid-circle d-flex align-items-center justify-content-center"
+                  <h2
+                    class="vid vid-circle quotes d-flex align-items-center justify-content-center"
                   >
-                    <span class="icon fz-50">
-                      <svg width="50" height="50" viewBox="0 0 17 17">
-                        <g></g>
-                        <path
-                          d="M3 2.692v11.618l11.618-5.837-11.618-5.781zM4 4.308l8.382 4.17-8.382 4.211v-8.381z"
-                          fill="#fff"
-                        />
-                      </svg>
-                    </span>
-                  </a>
+                    “Of course, you want more revenue, but what good is it if it
+                    isn’t predictable?
+                  </h2>
                 </div>
               </div>
             </div>
@@ -759,7 +1058,11 @@
             <div class="container">
               <div class="row lg-marg">
                 <div class="col-lg-6">
-                  <div class="left-block mt-100 md-mb50">
+                  <div
+                    class="left-block mt-100 md-mb50"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
                     <div class="d-flex align-items-center">
                       <div>
                         <div class="info">
@@ -772,7 +1075,11 @@
                       </div>
                       <div>
                         <div class="img fit-img radius-30">
-                          <img src="assets/img/vision.jpg" alt="" />
+                          <img
+                            src="assets/img/vision.jpg"
+                            alt="Mission Vision"
+                            style="height: 500px"
+                          />
                         </div>
                       </div>
                     </div>
@@ -795,7 +1102,11 @@
                 </div>
                 <div class="col-lg-6 valign">
                   <div>
-                    <div class="content full-width">
+                    <div
+                      class="content full-width"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    >
                       <div class="sec-head mb-30">
                         <h6 class="sub-title mb-15 main-color">Our Skills</h6>
                         <h2>Our Vision</h2>
@@ -804,29 +1115,21 @@
                         <div class="col-lg-11">
                           <div class="text">
                             <p>
-                              To provide systems and solutions which incorporate
-                              the most advanced technology and the latest
-                              innovations to meet customer requirements with
-                              greater emphasis on quality, reliability and
-                              environmental safety.
+                              To be the leading provider of innovative revenue
+                              management solutions in the holiday homes and
+                              hotel sectors, empowering property owners and
+                              managers to optimize profitability and guest
+                              satisfaction
                             </p>
-                          </div>
-                          <div class="mt-50">
-                            <div class="skills-box">
-                              <div class="skill-item mb-40">
-                                <h5 class="sub-title mb-15">
-                                  Revenu Management
-                                </h5>
-                                <div class="skill-progress">
-                                  <div class="progres" data-value="90%"></div>
-                                </div>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="content full-width">
+                    <div
+                      class="content full-width mt-50"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
+                    >
                       <div class="sec-head mb-30">
                         <h2>Our Mission</h2>
                       </div>
@@ -834,100 +1137,15 @@
                         <div class="col-lg-11">
                           <div class="text">
                             <p>
-                              To become the preferred partner and solutions
-                              provider for Automation, Control, Revenue
-                              Management, Communication and Security System
-                              requirements in the UAE and the GCC.
+                              Our mission is to revolutionize revenue management
+                              for holiday homes and hotels through cutting-edge
+                              technology and expert insights. We are committed
+                              to delivering tailored solutions that maximize
+                              RevPAR (Revenue per Available Room) and
+                              operational efficiency, ensuring our clients
+                              thrive in dynamic market landscapes.
                             </p>
                           </div>
-                          <div class="mt-50">
-                            <div class="skills-box">
-                              <div class="skill-item mb-40">
-                                <h5 class="sub-title mb-15">
-                                  Control and Automation
-                                </h5>
-                                <div class="skill-progress">
-                                  <div class="progres" data-value="90%"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="team section-padding pb-0">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="item md-mb50">
-                      <div class="img">
-                        <img src="assets/img/team/1.jpg" alt="" />
-                        <div class="info">
-                          <span class="fz-12">Founder</span>
-                          <h6 class="fz-18">Mohamed Ahsan</h6>
-                        </div>
-                      </div>
-                      <div class="social">
-                        <div class="links">
-                          <a href="#0">
-                            <i class="fab fa-facebook-f"></i>
-                          </a>
-                          <a href="#0">
-                            <i class="fab fa-behance"></i>
-                          </a>
-                          <a href="#0">
-                            <i class="fab fa-instagram"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="item md-mb50">
-                      <div class="img">
-                        <img src="assets/img/team/1.jpg" alt="" />
-                        <div class="info">
-                          <span class="fz-12">Co-Founder</span>
-                          <h6 class="fz-18">Ahamed Farzan</h6>
-                        </div>
-                      </div>
-                      <div class="social">
-                        <div class="links">
-                          <a href="#0">
-                            <i class="fab fa-facebook-f"></i>
-                          </a>
-                          <a href="#0">
-                            <i class="fab fa-behance"></i>
-                          </a>
-                          <a href="#0">
-                            <i class="fab fa-instagram"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="item">
-                      <div class="img">
-                        <img src="assets/img/team/1.jpg" alt="" />
-                        <div class="info">
-                          <span class="fz-12">Director</span>
-                          <h6 class="fz-18">Mohamed Faizal</h6>
-                        </div>
-                      </div>
-                      <div class="social">
-                        <div class="links">
-                          <a href="#0">
-                            <i class="fab fa-facebook-f"></i>
-                          </a>
-                          <a href="#0">
-                            <i class="fab fa-behance"></i>
-                          </a>
-                          <a href="#0">
-                            <i class="fab fa-instagram"></i>
-                          </a>
                         </div>
                       </div>
                     </div>
@@ -939,20 +1157,133 @@
 
           <!-- ==================== End about ==================== -->
 
+          <!-- ==================== Start Why Choose ==================== -->
+
+          <section class="blog-main" id="why-choose" data-scroll-index="5">
+            <div class="container section-padding bord-thin-bottom">
+              <div
+                class="sec-head mb-80"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <h6 class="sub-title main-color mb-25">RevPar Solution</h6>
+                <div class="bord pt-25 bord-thin-top d-flex align-items-center">
+                  <h2 class="fw-600">
+                    Why <span class="fw-200">Choose?</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="row why-choose">
+                <div class="col-lg-6">
+                  <div
+                    class="item mb-50"
+                    data-aos="fade-down-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="img">
+                      <img src="assets/img/why-choose/1.jpeg" alt="" />
+                    </div>
+                    <div class="content main-bg">
+                      <h4 class="mb-15">Industry Expertise</h4>
+                      <p>
+                        With years of experience in Revenue Management, we
+                        understand the complexities of the hospitality sector
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div
+                    class="item mb-50"
+                    data-aos="fade-down-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="img">
+                      <img src="assets/img/why-choose/2.jpeg" alt="" />
+                    </div>
+                    <div class="content main-bg">
+                      <h4 class="mb-15">Data-Driven Approach</h4>
+                      <p>
+                        Our strategies are rooted in data analytics and industry
+                        best practices, ensuring measurable results.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div
+                    class="item mb-50"
+                    data-aos="fade-down-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="img">
+                      <img src="assets/img/why-choose/3.jpeg" alt="" />
+                    </div>
+                    <div class="content main-bg">
+                      <h4 class="mb-15">Tailored Solutionstions</h4>
+                      <p>
+                        very solution is customized to align with your unique
+                        business goals and market dynamics.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div
+                    class="item mb-50"
+                    data-aos="fade-down-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="img">
+                      <img src="assets/img/why-choose/4.jpeg" alt="" />
+                    </div>
+                    <div class="content main-bg">
+                      <h4 class="mb-15">Dedicated Support</h4>
+                      <p>
+                        Our team is committed to your success, providing ongoing
+                        support and strategic guidance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-text">
+                <p data-aos="fade-up" data-aos-duration="1000">
+                  Transform your revenue potential with RevPAR Solution Revenue
+                  Management Services.
+                </p>
+                <p class="mt-5" data-aos="fade-up" data-aos-duration="1000">
+                  Contact us today to schedule a consultation and discover how
+                  we can optimize your RevPAR and drive sustainable growth.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- ==================== End Why Choose ==================== -->
+
           <!-- ==================== Start Testimonials ==================== -->
 
           <section class="testimonials section-padding">
             <div class="container">
               <div class="row">
                 <div class="col-lg-4">
-                  <div class="sec-head">
+                  <div
+                    class="sec-head"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
                     <h6 class="sub-title main-color mb-15">Testimonials</h6>
                     <h3 class="fw-600">
                       What People <span class="fw-200">Say?</span>
                     </h3>
                   </div>
                 </div>
-                <div class="col-lg-8 position-re">
+                <div
+                  class="col-lg-8 position-re"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   <div
                     class="testim-swiper"
                     data-carousel="swiper"
@@ -1117,10 +1448,14 @@
 
           <!-- ==================== Start Contact ==================== -->
 
-          <section class="contact section-padding" data-scroll-index="5">
+          <section class="contact section-padding" data-scroll-index="6">
             <div class="container">
               <div class="row">
-                <div class="col-lg-4 valign">
+                <div
+                  class="col-lg-4 valign"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
                   <div class="sec-head info-box full-width md-mb80">
                     <div class="phone fz-30 fw-600 underline main-color">
                       <a href="#0">+65 9876543</a>
@@ -1143,7 +1478,11 @@
                   </div>
                 </div>
                 <div class="col-lg-7 offset-lg-1 valign">
-                  <div class="full-width">
+                  <div
+                    class="full-width"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <div class="sec-head mb-50">
                       <h6 class="sub-title main-color mb-15">Let's Chat</h6>
                       <h3 class="text-u ls1">
@@ -1226,39 +1565,46 @@
 
         <!-- ==================== Start Footer ==================== -->
 
-        <footer class="min-footer sub-bg pt-30 pb-30">
+        <footer
+          class="min-footer sub-bg pt-30 pb-30"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="container">
             <div class="row" style="align-items: center">
-              <div class="col-lg-4 col-md-6 md-mb15">
+              <div class="col-lg-6 col-md-6 md-mb15">
                 <div class="logo icon-img-100">
                   <img src="assets/img/logo.png" alt="" />
                 </div>
               </div>
-              <div class="col-lg-4 order-md-3">
-                <div class="text-center">
-                  <p class="fz-14">
-                    ©
-                    <script>
-                      document.write(new Date().getFullYear());
-                    </script>
-                    RevPer all right Reserved
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 order-md-2 md-mb15">
+              <div class="col-lg-6 col-md-6 md-mb15">
                 <div class="links d-flex justify-content-end">
                   <ul class="rest d-flex align-items-center">
                     <li>
-                      <a href="#">FAQ</a>
+                      <a href="/">Home</a>
                     </li>
                     <li class="ml-30">
-                      <a href="#">Careers</a>
+                      <a href="./about.html">About Us</a>
                     </li>
                     <li class="ml-30">
-                      <a href="#">Contact Us</a>
+                      <a href="./services/distribution.html"
+                        >Distribution Services</a
+                      >
+                    </li>
+                    <li class="ml-30">
+                      <a href="./services/price-optimization.html"
+                        >Price Optimization</a
+                      >
                     </li>
                   </ul>
                 </div>
+                <p class="fz-14 d-flex justify-content-end mt-10">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  RevPer all right Reserved
+                </p>
               </div>
             </div>
           </div>
@@ -1279,6 +1625,7 @@
     <script src="assets/js/ScrollSmoother.min.js"></script>
     <script src="assets/js/ScrollTrigger.min.js"></script>
     <script src="assets/js/smoother-script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- custom scripts -->
     <script src="assets/js/scripts.js"></script>

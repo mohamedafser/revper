@@ -10426,3 +10426,52 @@ footer.clean-footer.crev:before {
 }
 
 /* ====================== [ End Responsive ] ====================== */
+
+/* ============ CUSTOM BY AUTHOUR ============= */
+.vid-circle.quotes {
+  width: auto;
+  height: auto;
+  border: unset;
+}
+
+/* ================ SECTION SERVICES ============ */
+.item.lg-serv img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.item.lg-serv .cont {
+  min-height: 215px;
+}
+
+.item.sub-bg.md-serv img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.item.sub-bg.md-serv .cont {
+  min-height: 215px;
+}
+
+.blog-crev .item .img .tag .shap-left-bottom {
+  bottom: 1px;
+}
+
+.blog-crev .item .img .tag {
+  width: 65%;
+  text-align: center;
+}
+
+.item.sub-bg.md-serv .cont p {
+  color: #1a1a1a;
+}
+
+/* ============= WHY CHOOSE =========== */
+.row.why-choose img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.choose-text {
+  text-align: center;
+}
