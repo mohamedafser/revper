@@ -10475,3 +10475,34 @@ footer.clean-footer.crev:before {
 .choose-text {
   text-align: center;
 }
+
+.blog-crev .item .img img,
+.why-choose img {
+  transition: all 0.2s ease;
+}
+
+.blog-crev .item .img:hover img,
+.why-choose .img:hover img {
+  transform: scale(1.1);
+}
+
+.blog-crev .item .img,
+.why-choose .item .img {
+  overflow: hidden;
+}
+
+.ourClients img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.accordion .title h6 {
+  max-width: 95%;
+}
+
+.accordion .title .ico {
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
