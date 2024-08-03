@@ -415,48 +415,7 @@ $(function () {
   galleryTextCrev.on("transitionStart", function () {
     galleryImgCrev.slideTo(galleryTextCrev.activeIndex);
   });
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
 
-  var swiper = new Swiper(".ourClients", {
-    slidesPerView: 6,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: { delay: 1000, disableOnInteraction: false },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      640: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 4,
-      },
-      1280: {
-        slidesPerView: 6,
-      },
-    },
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //   },
-    //   navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    //   },
-  });
   /* =============================================================================
     ------------------------------  Interactive work   -----------------------------
     ============================================================================= */
